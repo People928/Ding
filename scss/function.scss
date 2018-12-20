@@ -1,0 +1,45 @@
+@import "./reset.scss";
+@mixin border($size,$type,$color) {
+    border:$size $type $color;  
+}
+
+@mixin pos($pos:absolute){
+    position: $pos;
+}
+@mixin  font($siz) {
+    font-size: px2rem($siz) !important;
+}
+@mixin flex($ty:row,$main:space-between,$item:center) {
+    display: flex;
+    flex-direction: $ty;
+    justify-content: $main;
+    align-items: $item;
+    
+}
+
+@function px2rem($px){
+	$rem:48px;
+	@return($px/$rem)+rem;
+}
+
+@mixin text-clamp($lines: 2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+  }
+
+@mixin text-nowrap {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+        
+}
+@mixin box($x) {
+    box-sizing: border-box;
+    padding: $x;
+    
+}

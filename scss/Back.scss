@@ -1,0 +1,150 @@
+@import "./public.scss";
+@import "./function.scss";
+$color :#3096f8;
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: url(../../img/soucre/img-0f6be6eeb858773fe3d8fd087964be2e.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    .zhe{
+        width: 100vw;
+        height: 100vh;
+        background:rgba(0,0,0,0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        main{
+            .top{
+                @include  box(px2rem(50px));
+                @include flex();
+               div{
+                   width: px2rem(125px);
+                   height: px2rem(125px);
+                   border-radius: 50%;
+                   background: $color;
+                   color: #fff;
+                   text-align: center;
+                   line-height: px2rem(125px);
+                   font-size: px2rem(40px);
+               }
+               a{
+                  color: #fff; 
+               } 
+            }
+            .title{
+                font-size: px2rem(60px);
+                margin-left: px2rem(82px);
+                margin-bottom: px2rem(100px);
+               
+               color: #fff; 
+               line-height: 1.5em;
+
+            
+            }
+            .middle{
+                min-height: px2rem(175px);
+              
+                margin-left: px2rem(90px);
+                margin-right: px2rem(90px);
+                margin-left: px2rem(90px);
+                box-sizing: border-box;
+                // padding-bottom: px2rem(50px);
+                color: #fff;
+                    p{
+                        font-size: px2rem(30px);
+                    }
+                    @include flex(column,flex-start,flex-start);
+                    .pas{
+                        margin-top: px2rem(30px);
+                    }
+                    .telBox{
+                        width: 100%;
+                        border-bottom: 1px solid #ffff;
+                    }
+              .telBox:nth-of-type(1){
+              
+                border-color:#a3a5a8;
+
+                
+            }
+          
+              .left{
+                  width:100%;
+                    margin-top: px2rem(30px);
+                    margin-bottom: px2rem(30px);
+                    color: #fff;
+                    P{
+                        i{
+                        font-size: px2rem(30px);
+                        margin-left: px2rem(5px);
+                        margin-right: px2rem(10px);
+                        color: #ccc;
+                    }  
+                    }
+                  
+                 @include flex();
+                  input{
+                      outline: none;
+                      background:transparent;
+                      color: #fff;
+                      
+                  }
+                  input::-webkit-input-placeholder{
+                     font-size: px2rem(30px); 
+                    color: #ccc;
+                }
+                  
+              }
+            }
+            .del{
+                width: px2rem(45px);
+                height: px2rem(45px);
+                background: #a3a5a8;
+                text-align: center;
+                line-height: px2rem(38px);
+                border-radius: 50%;
+                i{
+                    color: #fff;
+                    font-size: px2rem(20px);
+            
+                }
+            }
+        }
+        .join{
+            margin-left: px2rem(80px);
+            margin-right: px2rem(70px);
+            margin-top: px2rem(40px);
+            a{
+                display: block;
+                height: px2rem(133px);
+                background: rgba(255,255,255,0.1);
+                color: #ccc;
+                text-align: center;
+                line-height: px2rem(133px);
+                     border-radius: 5px;
+                     margin-bottom: px2rem(30px);
+
+               
+            }
+            a.ok{
+                color: #fff;
+                background: $color;
+            }
+            span{
+                color: #fff;
+                font-size: px2rem(35px);
+          
+
+            }
+        }
+        .more{
+            position: absolute;
+            bottom:10%;
+            left: px2rem(90px);
+          
+            color: #fff;
+            font-size: px2rem(30px);
+        }
+    }
+}

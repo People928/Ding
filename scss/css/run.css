@@ -1,0 +1,186 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* custom */
+a {
+  color: #7e8c8d;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden; }
+
+li {
+  list-style: none; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px; }
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px; }
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px; }
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px; }
+
+html, body {
+  width: 100%; }
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+header {
+  background: #fff;
+  padding: 0 0.8333333333rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.125rem; }
+  header i {
+    color: #3994e3;
+    font-size: 24px; }
+  header h3 {
+    color: #565a5d;
+    font-weight: bold; }
+  header .p {
+    color: #3994e3; }
+    header .p img {
+      width: 1.25rem;
+      height: 1.25rem; }
+    header .p img:first-child {
+      margin-right: 0.8333333333rem; }
+
+.wrap {
+  height: 82vh;
+  background: #f8f8f8;
+  overflow: auto; }
+  .wrap .main {
+    background: #fff;
+    height: 8.3333333333rem;
+    box-sizing: border-box;
+    padding: 0.4166666667rem 0.8333333333rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.625rem; }
+    .wrap .main h3 {
+      font-size: 17px;
+      font-weight: bold;
+      margin-top: 0.2083333333rem;
+      margin-bottom: 0.2083333333rem; }
+    .wrap .main .mouth {
+      color: #f78d39;
+      line-height: 1.6666666667rem; }
+    .wrap .main .one {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 2.0833333333rem; }
+      .wrap .main .one img {
+        width: 1.4583333333rem;
+        height: 1.4583333333rem;
+        margin-right: 0.4166666667rem; }
+    .wrap .main .two {
+      margin-top: 0.4166666667rem;
+      display: flex;
+      flex-direction: row; }
+      .wrap .main .two div {
+        padding: 0.4166666667rem 0.4166666667rem;
+        background: #f6f6f6;
+        color: #737478;
+        font-size: 13px;
+        margin-right: 0.625rem; }
+  .wrap .post {
+    min-height: 6.25rem;
+    background: #fff;
+    padding: 0.8333333333rem 0.8333333333rem;
+    box-sizing: border-box; }
+    .wrap .post h3 {
+      line-height: 3.125rem; }
+    .wrap .post .list {
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-direction: column; }
+      .wrap .post .list li {
+        line-height: 2.0833333333rem;
+        font-size: 14px; }
+
+footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 0 1.25rem; }
+  footer .one {
+    display: flex;
+    flex-direction: row; }
+    footer .one img {
+      width: 2.2916666667rem;
+      height: 2.2916666667rem;
+      margin-right: 1.0416666667rem; }
+    footer .one .peo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      footer .one .peo p {
+        font-size: 15px; }
+      footer .one .peo span {
+        font-size: 13px;
+        color: #808082; }
+  footer .two {
+    width: 6.25rem;
+    height: 2.5rem;
+    background: #3994e3;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.2083333333rem; }
+
+/*# sourceMappingURL=run.css.map */

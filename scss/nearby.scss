@@ -1,0 +1,39 @@
+@import "./reset.scss";
+$color :#3096f8;
+nav{
+    li:nth-child(1){
+        border-color: transparent !important;
+        a{
+           color: #000 !important;
+        }
+    }
+    li:nth-child(2) {
+        border-color: $color !important;
+        a{
+           color: $color !important;
+        }
+        
+    }  
+}
+#address{
+height: px2rem(110px);
+display: flex;
+flex-direction: row;
+align-items: center;
+background: #e6f2fe;
+font-size: px2rem(25px);
+color: #4d5761;
+box-sizing: border-box;
+padding: 20px;
+}
+.woker_name{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        font-size: px2rem(30px);
+        color: #4d5761;
+    }
+}

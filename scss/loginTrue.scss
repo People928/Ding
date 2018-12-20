@@ -1,0 +1,54 @@
+@import "./public.scss";
+@import "./function.scss";
+$color :#3096f8;
+header{
+   @include box(15px);
+   i{
+       color:$color;
+   }
+}
+.title{
+    p{
+        font-size: px2rem(75px);
+       margin-bottom: px2rem(50px);
+
+
+    }
+    span{
+       font-size: px2rem(40px);
+       a{
+           color: $color;
+       }
+
+    }
+   @include box(25px);
+
+}
+main{
+    @include box(px2rem(50px));
+    
+    .inputBox{
+        @include flex();
+        input{
+            outline: none;
+           width: px2rem(196px);
+           height: px2rem(196px);
+           caret-color: #3096f8;
+           font-size: px2rem(60px);
+           text-align: center;
+           border-bottom: 1px solid #ccc; 
+        }
+    }
+    .else{
+        font-size: px2rem(35px);
+        color: #bfc1c2;
+        margin-top: px2rem(30px);
+    }
+}
+footer{
+  height: 7vh;
+  div{
+      color: $color;
+      font-size: px2rem(40px);
+  }
+}

@@ -1,0 +1,167 @@
+// @import "./reset.scss";
+@import "./public.scss";
+@import "./function.scss";
+$color :#3096f8;
+.container{
+    header{
+        height: 8vh;
+        @include box(px2rem(30px));
+        @include flex();
+        i{
+            color: $color;
+        }
+        p{
+            @include font(40px);
+        }
+        a{
+            color: $color;
+            @include font(30px);
+
+        }
+    }
+    main{
+        height: 84vh;
+        overflow: auto;
+        .main-head{
+            height: px2rem(250px);
+            // background: #000;
+            @include box(px2rem(30px));
+            @include flex(row,flex-start,flex-start);
+            img{
+                width: px2rem(235px);
+                height: px2rem(235px);
+                margin-right: px2rem(25px);
+             }
+             p{
+                margin-right: px2rem(25px);
+                font-size: px2rem(45px);
+
+             }
+             span{
+                 display: block;
+                 width: px2rem(90px);
+                 height: px2rem(53px);
+                 background: $color;
+                 color: #fff;
+                 text-align: center;
+                 line-height: px2rem(53px);
+                border-radius: 5px;
+                font-size: px2rem(30px);
+             }
+            
+        }
+        .middle{
+            // background: #fcfcfc;
+            nav{
+                height: px2rem(150px);
+                border-bottom: 1px solid #ccc;
+                background: #fff;
+                @include flex();
+                a{
+                    flex: 1;
+                    height: 100%;
+                    text-align: center;
+                    line-height: px2rem(150px);
+                    color: #696969;
+                    border-bottom: 2px solid  transparent;
+                }
+                a:nth-child(1){
+                    color: $color;
+                    border-color: $color;
+                }
+            }
+            .middle-main{
+                background: #f4f4f4;
+                @include box(px2rem(50px));
+                h1{
+                    font-size: px2rem(60px);
+                    margin-bottom: px2rem(20px);
+                }
+                .title_p{
+                    font-size: px2rem(39px);
+                    margin-top: px2rem(30px);
+
+                }
+                video{
+                    width: 100%;
+                    height:px2rem(500px) ;
+                    margin-top: px2rem(70px);
+                }
+                .author{
+                    @include flex(row,flex-start);
+                    margin-top: px2rem(20px);
+
+                    img{
+                        width: px2rem(60px);
+                        height: px2rem(60px);
+                    }
+                    span{
+                        font-size: px2rem(32px);
+                        margin-left: px2rem(10px);
+                        
+                    }
+                }
+                .last_text{
+                    font-size: px2rem(45px);
+                    margin-top: px2rem(20px);
+                    margin-bottom: px2rem(20px);
+                    line-height: 1.6em;
+
+                }
+            }
+            .middle-main:nth-of-type(2){
+                background: #fff;
+            }
+        
+        }
+        .middle_footer{
+            height: px2rem(1458px);
+            @include flex(column,flex-start,center);
+            @include box(px2rem(40px));
+            
+            .footer_title{
+                font-size: px2rem(25px);
+                margin-bottom: px2rem(30px);
+
+            }
+            .join{
+                font-size: px2rem(60px);
+                color: $color;
+
+            }
+          .img1{
+                width: px2rem(170px);
+                height: px2rem(150px);
+                margin-top: px2rem(30px);
+            }
+           .img2{
+                width: px2rem(400px);
+                height: px2rem(450px);
+                margin-top: px2rem(30px);
+
+            }
+           
+        }
+        .footer_last{
+            @include flex(row);
+            height: px2rem(200px);
+            border-top: 1px solid #ccc;
+            margin-top: px2rem(145px);
+            color:#a1a2a4; 
+            font-size: px2rem(25px);               
+            img{
+                width:px2rem(71px) !important;
+                height:px2rem(100px) !important;
+            }
+        }
+      
+    }
+    footer{
+        height: 8vh;
+        background: $color;
+        text-align: center;
+        line-height: 8vh;
+        color: #fff;
+
+    }
+}

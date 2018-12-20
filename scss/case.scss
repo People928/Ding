@@ -1,0 +1,203 @@
+// @import "./reset.scss";
+@import "./public.scss";
+@import "./function.scss";
+$color :#3096f8;
+.container{
+    header{
+        height: 8vh;
+        @include box(px2rem(30px));
+        @include flex();
+        i{
+            color: $color;
+        }
+        p{
+            @include font(40px);
+        }
+        a{
+            color: $color;
+            @include font(30px);
+
+        }
+    }
+    main{
+        height: 84vh;
+        overflow: auto;
+        .main-head{
+            height: px2rem(250px);
+            // background: #000;
+            @include box(px2rem(30px));
+            @include flex(row,flex-start,flex-start);
+            img{
+                width: px2rem(235px);
+                height: px2rem(235px);
+                margin-right: px2rem(25px);
+             }
+             p{
+                margin-right: px2rem(25px);
+                font-size: px2rem(45px);
+
+             }
+             span{
+                 display: block;
+                 width: px2rem(90px);
+                 height: px2rem(53px);
+                 background: $color;
+                 color: #fff;
+                 text-align: center;
+                 line-height: px2rem(53px);
+                border-radius: 5px;
+                font-size: px2rem(30px);
+             }
+            
+        }
+        .middle{
+            // background: #fcfcfc;
+            nav{
+                height: px2rem(150px);
+                border-bottom: 1px solid #ccc;
+                background: #fff;
+                @include flex();
+                a{
+                    flex: 1;
+                    height: 100%;
+                    text-align: center;
+                    line-height: px2rem(150px);
+                    color: #696969;
+                    border-bottom: 2px solid  transparent;
+                }
+                a:nth-child(3){
+                    color: $color;
+                    border-color: $color;
+                }
+            }
+            
+    }
+    .banner-img{
+        height: px2rem(500px);
+        @include box(px2rem(30px));
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .banner{
+        height: px2rem(586px);
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: px2rem(45px);
+        .banner_header{
+            height: px2rem(165px);
+            background: #edf2f8;
+            line-height: px2rem(165px);
+            font-size: px2rem(45px);
+          
+            p{
+                margin-left: px2rem(20px);
+            }
+            b{
+                font-size: px2rem(60px);
+                font-weight: bold;
+            }
+        }
+        .banner-info{
+            height: px2rem(419px);
+        @include box(px2rem(30px));
+
+            @include flex();
+            div{
+            height:70%;
+
+               width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                p{
+                    font-size: px2rem(35px);
+                    color: #696969;
+                }
+                b{
+                    font-weight: bold;
+                    font-size: px2rem(56px);
+
+                }
+                span{
+                    font-size: px2rem(46px);
+                    color: #696969;
+                }
+            }
+            div:nth-of-type(2){
+                b,span{
+                    color: $color;
+                }
+            }
+        }
+    }
+    .cBox{
+        height: px2rem(320px);
+        background: #edf2f6;
+        @include flex(row,flex-start,flex-start);
+        @include box(px2rem(30px));
+        box-sizing: border-box;
+        margin: px2rem(60px);
+        border-radius: 5px;
+        img{
+            width: px2rem(135px);
+            height: px2rem(135px);
+            margin-left: px2rem(40px);
+            margin-top: px2rem(40px);
+
+        }
+        div{
+            width: 65%;
+            margin-left: px2rem(40px);
+            margin-top: px2rem(40px);
+
+        }
+         h1{
+             font-size: px2rem(40px);
+         }
+         p{
+             color: #585d61;
+             font-size: px2rem(36px);
+             line-height: 1.5em;
+            margin-top: px2rem(10px);
+
+
+         }
+    }
+    .case_list{
+        li{
+            box-sizing: border-box;
+            margin: px2rem(50px);
+            @include box(px2rem(30px));
+            h1{
+                width: 68%;
+                font-size: ppx2rem(66px);
+                line-height: 1.5em;
+            }
+            p{
+                font-size: px2rem(39px);
+                color: #5e6166;
+                line-height: 1.5em;
+                margin-top: px2rem(25px);
+
+            }
+            img{
+                width:75vw;
+                height: px2rem(830px);
+                margin-top: px2rem(30px);
+                
+            }
+        }
+    }
+}
+
+    footer{
+        height: 8vh;
+        background: $color;
+        text-align: center;
+        line-height: 8vh;
+        color: #fff;
+
+    }
+}

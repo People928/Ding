@@ -1,0 +1,71 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	/*高亮效果*/
+	-webkit-tap-highlight-color: transparent;
+	/*清除高亮效果  仅在移动端生效*/
+	-webkit-box-sizing: border-box;
+	/*设置怪异盒模型*/
+}
+
+
+/*伪类元素*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dd,
+input {
+	font-size: 14px;
+	font-family: "microsoft yahei", sans-serif;
+	color: #000;
+}
+
+
+/*第二个值是手机默认字体*/
+
+ul,
+li,
+ol,
+dt {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+img {
+	border: 0;
+}
+
+input,
+textarea {
+	outline: none;
+	border: 0;
+	resize: none;
+}
+
+.clear:after {
+	/*清浮动的方法*/
+	/*display:block;
+	content="";
+	clear:both;*/
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clear {
+	zoom: 1;
+}

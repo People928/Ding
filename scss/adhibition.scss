@@ -1,0 +1,105 @@
+@import "./function.scss";
+@import "./reset.scss";
+.warp{
+    .box{
+        height:8vh;
+        padding: 0 px2rem(53px);
+        margin-top:3vh;
+        line-height: 8vh;
+        box-sizing: border-box;
+        @include flex(row,space-between,);
+        i{
+            display: block;
+            color:#459ef0;
+            font-size:18px;
+        }
+        .big{
+            width:70vw;
+            height:6vh;
+            display: flex;
+            line-height: 6vh;
+            box-sizing: border-box;
+            background:#ededed;
+            border-radius: 5px; 
+            i{
+               color:#a0a0a0;
+               margin-left: 5vw; 
+               margin-right: 5vw; 
+               box-sizing: border-box;
+            }
+            span{
+                color:#a0a0a0;   
+            }
+        }
+    }
+    .box_list{
+        height:10vh;
+        padding: 0 px2rem(53px);
+        box-sizing: border-box;
+        display: flex;
+        font-size: px2rem(40px);
+        @include flex(row,space-between,);
+        line-height: 10vh;
+        border-bottom: 1px solid #e6e6e6; 
+        li:nth-child(1){
+            color:#3a91fa;
+            border-bottom:2px solid #3a91fa;
+        }
+    }
+    .box_big{
+        margin-left:10vw;
+        height:10vh;
+        border-bottom:1px solid #e5e5e5; 
+        line-height:10vh;
+        color:#a0a0a0; 
+        font-size: px2rem(40px);
+
+    }
+
+    .box_left{
+        margin-left:10vw;
+        height:10vh;
+        border-bottom:1px solid #e5e5e5; 
+        display: flex;
+        box-sizing: border-box;
+        // text-align: center;
+        div{
+            width:50%;
+            height: 50%;
+            border-right:1px solid #ccc;
+            font-size: px2rem(40px);
+            box-sizing: border-box;
+             line-height:5vh;
+             margin: auto 0;
+
+        }
+        .text{
+            margin-left:5vh; 
+            border-right:0;
+            font-weight: 0;
+        
+        font-size: px2rem(40px);
+
+        }
+    }
+    .box-bottom{
+        padding: 3vh px2rem(120px);
+        div{
+            border:1px solid #e5e5e5;
+            height:8vh;
+            display: flex;
+            @include flex(row,space-around,);
+            i{
+                font-size:20px;
+                line-height: 10vh;
+                color:#a4a3a8;
+            }
+            span{
+                color:#808183;
+                line-height: 10vh;
+                 font-size: px2rem(40px);
+
+            }
+        }
+    }
+}

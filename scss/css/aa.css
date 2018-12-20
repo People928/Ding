@@ -1,0 +1,192 @@
+body {
+  background: #fff; }
+
+header {
+  width: 100vw;
+  height: 6vh;
+  line-height: 6vh;
+  background: #fff;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  margin-top: 0.5vh; }
+  header h2 {
+    font-size: 0.30rem; }
+  header i {
+    font-size: 0.4rem;
+    margin-left: 0.1rem;
+    color: #333; }
+
+.search {
+  height: 8vh;
+  line-height: 8vh;
+  margin-top: 6vh;
+  width: 100vw;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .search input {
+    width: 75vw;
+    height: 6vh;
+    background: #f2f2f2;
+    border-radius: 8px;
+    padding-left: 0.6rem;
+    margin-top: 0.3rem;
+    box-sizing: border-box;
+    font-size: 0.25rem; }
+  .search i {
+    position: absolute;
+    font-size: 0.4rem;
+    color: #999;
+    left: 0.3rem;
+    top: 0.15rem; }
+  .search .logo {
+    width: 0.7rem;
+    height: 0.7rem;
+    background: #3a98f6;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 0.7rem;
+    font-size: 0.2rem; }
+
+.main {
+  overflow: auto; }
+  .main .nav {
+    width: 100vw;
+    height: 5vh;
+    line-height: 5vh;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+    margin-top: 0.2rem; }
+    .main .nav ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid gainsboro; }
+      .main .nav ul li {
+        text-align: center; }
+      .main .nav ul a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        font-size: 0.23rem;
+        color: #333; }
+      .main .nav ul .act {
+        border-bottom: 1px solid #3A98F6;
+        color: #3A98F6; }
+
+.text_box {
+  padding: 0 0.3rem;
+  box-sizing: border-box;
+  margin-top: 0.2rem;
+  line-height: 0.4rem;
+  margin-bottom: 0.3rem; }
+  .text_box h2 {
+    font-size: 0.3rem; }
+  .text_box p:nth-of-type(1) {
+    font-size: 0.24rem;
+    color: orange; }
+  .text_box p:nth-of-type(2) {
+    font-size: 0.25rem;
+    color: #333; }
+
+.friends-list {
+  padding: 0 0.3rem;
+  box-sizing: border-box; }
+  .friends-list ul {
+    display: flex;
+    flex-direction: column; }
+    .friends-list ul li {
+      height: 1rem;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.2rem;
+      border-bottom: 0.5px solid gainsboro;
+      padding: 0 0 0.2rem 0; }
+      .friends-list ul li .box {
+        display: flex; }
+      .friends-list ul li .logo {
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        background: #3a98f6;
+        text-align: center;
+        line-height: 0.8rem;
+        color: #fff;
+        font-size: 0.25rem;
+        margin-right: 0.2rem; }
+      .friends-list ul li .name {
+        font-size: 0.26rem; }
+        .friends-list ul li .name p {
+          color: #999;
+          font-size: 0.23rem; }
+      .friends-list ul li .time {
+        font-size: 0.2rem;
+        color: #999; }
+
+.logo-w {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-size: cover;
+  margin-right: 0.2rem; }
+  .logo-w img {
+    width: 100%;
+    height: 100%; }
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .name i {
+    font-size: 0.2rem;
+    color: orange; }
+  .name .yes {
+    color: orange;
+    font-size: 0.18rem; }
+
+.video-box {
+  width: 94vw;
+  height: 30vh;
+  margin: 0 auto; }
+
+.video-text {
+  width: 94vw;
+  margin: 0 auto 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.1rem; }
+  .video-text p {
+    color: #999;
+    font-size: 0.18rem; }
+    .video-text p span {
+      margin-right: 0.2rem; }
+  .video-text i {
+    margin-right: 0.1rem; }
+
+.xq {
+  width: 1.2rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  border: 1px solid #3A98F6;
+  text-align: center;
+  line-height: 0.5rem;
+  color: #3A98F6;
+  font-size: 0.18rem;
+  border-radius: 3px; }
+
+.swiper {
+  width: 100vw;
+  height: 16vh; }
+  .swiper img {
+    width: 100%;
+    height: 100%; }
+
+/*# sourceMappingURL=aa.css.map */

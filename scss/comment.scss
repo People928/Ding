@@ -1,0 +1,147 @@
+@import "./public.scss";
+@import "./function.scss";
+$color :#3096f8;
+.container{
+    header{
+        height: 8vh;
+        @include box(px2rem(30px));
+        @include flex();
+        i{
+            color: $color;
+        }
+        p{
+            @include font(40px);
+        }
+        a{
+            color: $color;
+            @include font(30px);
+
+        }
+    }
+    main{
+        height: 84vh;
+        overflow: auto;
+        .main-head{
+            height: px2rem(250px);
+            // background: #000;
+            @include box(px2rem(30px));
+            @include flex(row,flex-start,flex-start);
+            img{
+                width: px2rem(235px);
+                height: px2rem(235px);
+                margin-right: px2rem(25px);
+             }
+             p{
+                margin-right: px2rem(25px);
+                font-size: px2rem(45px);
+
+             }
+             span{
+                 display: block;
+                 width: px2rem(90px);
+                 height: px2rem(53px);
+                 background: $color;
+                 color: #fff;
+                 text-align: center;
+                 line-height: px2rem(53px);
+                border-radius: 5px;
+                font-size: px2rem(30px);
+             }
+            
+        }
+        .middle{
+            nav{
+                height: px2rem(150px);
+                border-bottom: 1px solid #ccc;
+                background: #fff;
+                @include flex();
+                a{
+                    flex: 1;
+                    height: 100%;
+                    text-align: center;
+                    line-height: px2rem(150px);
+                    color: #696969;
+                    border-bottom: 2px solid  transparent;
+                }
+                a:nth-child(2){
+                    color: $color;
+                    border-color: $color;
+                }
+            }
+        }
+
+            .work{
+                height: px2rem(120px);
+                border-bottom: 1px solid #ccc;
+                font-size: px2rem(35px);
+                color: $color;
+                @include box(15px);
+                @include flex();
+                div{
+                    @include flex();
+                }
+                img{
+                    width: px2rem(90px);
+                    width: px2rem(90px);
+                    margin-right: px2rem(15px);
+                }
+                i{
+                    font-size: px2rem(35px);
+                    color: #696969;
+                }
+            }
+            .comment_list{
+                // background: #000;
+            .conmment-item{
+                border-bottom: 1px solid #ccc;
+                padding-bottom: px2rem(20px);
+            }
+                li{
+                    font-size: px2rem(35px);
+                        color: #696969;
+                        margin-top: px2rem(15px);
+                        line-height: 1.5em;
+                        @include flex();
+                        @include box(px2rem(20px));
+                    .star_box{
+                        @include flex(row,flex-start);
+                        font-size: px2rem(35px);
+                        color: #696969;
+                        p{
+                            margin-left: px2rem(17px);
+                            
+                        }
+                        img{
+                            width: px2rem(200px);
+                            height: px2rem(60px);
+                        }
+                    }
+                    a{
+                        color: $color;
+                    }
+                }
+                   
+
+            }
+    }
+    footer{
+        height: 8vh;
+        border-top: 1px solid #ccc;
+        @include flex();
+        a{
+            // flex: 1;
+            text-align: center;
+            line-height: 8vh;
+            font-size: px2rem(40px);
+        }
+        a:nth-of-type(1){
+            width: 60%;
+            color: $color;
+        }
+        a:nth-of-type(2){
+            width: 40%;
+            background: $color;
+            color: #fff;
+        }
+    }
+}

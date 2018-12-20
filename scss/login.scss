@@ -1,0 +1,64 @@
+@import "./public.scss";
+@import "./function.scss";
+$color :#3096f8;
+header{
+   @include box(15px);
+   i{
+       color:$color;
+   }
+}
+.title{
+    font-size: px2rem(75px);
+   @include box(25px);
+
+}
+main{
+    height: px2rem(175px);
+  
+    border-bottom: 1px solid #ccc;
+    margin: px2rem(90px);
+    box-sizing: border-box;
+    padding-bottom: px2rem(50px);
+  @include flex(column,flex-start,flex-start);
+  .telBox{
+    width: 100%;
+}
+  .left{
+      width:100%;
+        margin-top: px2rem(60px);
+        margin-bottom: px2rem(60px);
+        i{
+            margin-left: px2rem(5px);
+            margin-right: px2rem(10px);
+        }
+     @include flex();
+      input{
+          outline: none;
+      }
+      
+  }
+}
+.del{
+    width: px2rem(45px);
+    height: px2rem(45px);
+    background: #a3a5a8;
+    text-align: center;
+    line-height: px2rem(38px);
+    border-radius: 50%;
+    i{
+        color: #fff;
+        font-size: px2rem(20px);
+
+    }
+}
+.next{
+    display: block;
+    height: px2rem(133px);
+    background: $color;
+    color: #fff;
+    text-align: center;
+    line-height: px2rem(133px);
+    margin: px2rem(60px);
+    border-radius: 5px;
+    margin-top: px2rem(50px);
+}

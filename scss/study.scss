@@ -1,0 +1,184 @@
+@function px2rem($px){
+	$rem:48px;
+	@return($px/$rem)+rem;
+}
+header{
+    background: #fff;
+    padding: 0 px2rem(40px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: px2rem(150px);
+    box-sizing: border-box;
+    i{
+        color: #3994e3;
+        font-size: 24px;
+    }
+    h3{
+        color: #565a5d;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    p{
+        color: #3994e3;
+    }
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    background: #f8f8f8;
+    min-height: 100vh;
+    .name{
+        height: px2rem(200px);
+        background: #fff;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        padding: 0 px2rem(40px);
+        align-items: center;
+        img{
+            width: px2rem(150px);
+            height: px2rem(150px);
+            margin-right: px2rem(30px);
+        }
+        .one{
+            display: flex;
+            flex-direction: column;
+            h3{
+                font-size: 15px;
+                line-height: px2rem(70px);
+            }
+            p{
+                font-size: 12px;
+                color: #949494;
+            }
+        }
+    }
+
+    .serve{
+        height: px2rem(600px);
+        box-sizing: border-box;
+        padding: px2rem(40px) px2rem(40px);
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        margin-top: px2rem(30px);
+        img{
+            
+            height: px2rem(500px);
+        }
+    }
+
+    .news{
+        height: px2rem(150px);
+        background: #fff;
+        margin-top: px2rem(40px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 px2rem(40px);
+        align-items: center;
+        .left{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img{
+                width: px2rem(80px);
+                height: px2rem(80px);
+                margin-right: px2rem(30px);
+            }
+            p{
+                font-weight: bold;
+                font-size: 14px;
+                color: #222;
+            }
+        }
+        .right{
+            display: flex;
+            flex-direction: row;
+            font-size: 14px;
+            color: #c7c8ca;
+            align-items: center;
+            p{
+                margin-right: px2rem(20px);
+            }
+            i{
+                font-size: 20px;
+                color: #c7c8ca;
+            }
+        }
+    }
+
+
+    .dd{
+        height: px2rem(600px);
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: px2rem(30px) px2rem(40px);
+        margin-top: px2rem(40px);
+        .zb{
+            display: flex;
+            flex-direction: row;
+            height: px2rem(100px);
+            align-items: center;
+            img{
+                width: px2rem(80px);
+                height: px2rem(80px);
+                margin-right: px2rem(30px);
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+
+        .img{
+            overflow-x: auto;
+            display: flex;
+            flex-direction: row;
+            margin-top: px2rem(30px);
+            .item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               
+                img{
+                    width: px2rem(260px);
+                    height: px2rem(340px);
+                    margin-left: px2rem(30px);
+                }
+                p{
+                    font-size: 13px;
+                    color: #414141;
+                }
+            }
+            img{
+                height: px2rem(400px);
+                width: px2rem(600px);
+                margin-right: px2rem(40px);
+            }
+        }
+        .img::-webkit-scrollbar {display:none};
+    }
+    .sl{
+        height: px2rem(100px);
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        background: #fff;
+       
+        p{
+            color: #0386fa;
+            font-size: px2rem(13px);
+        }
+    }
+    .help{
+        height: px2rem(200px);
+        line-height: px2rem(200px);
+        color: #0386fa;
+        font-size: 12px;
+        text-align: center;
+    }
+}

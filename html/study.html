@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <a href="#">
+        <a href="./my.html">
             <i class="iconfont icon-arrow-left"></i>
         </a>
         <h3>学习中心</h3>
@@ -49,9 +49,11 @@
             
             <div class="img">
                 <img src="../img/study/study_11.png" alt="">
-                <img src="../img/study/study_11.png" alt="">
-                <img src="../img/study/study_11.png" alt="">
-                <img src="../img/study/study_11.png" alt="">
+                <img src="../img/study/study1.png" alt="">
+                <img src="../img/study/stud_03.png" alt="">
+                <img src="../img/study/stud_01.png" alt="">
+                <img src="../img/study/stud_04.png" alt="">
+                <img src="../img/study/stud_08.png" alt="">
             </div>
            
         </div>
@@ -76,8 +78,12 @@
                     <p>使用手册</p>
                 </div>
                 <div class="item">
-                    <img src="../img/study/study_02.png" alt="">
-                    <p>产品手册</p>
+                    <img src="../img/study/study2.png" alt="">
+                    <p>安全警示</p>
+                </div>
+                <div class="item">
+                    <img src="../img/study/study3.png" alt="">
+                    <p>安全白皮书</p>
                 </div>
             </div>
            
@@ -92,9 +98,10 @@
             
             <div class="img">
                 <img src="../img/study/study_16.png" alt="">
-                <img src="../img/study/study_16.png" alt="">
-                <img src="../img/study/study_16.png" alt="">
-                <img src="../img/study/study_16.png" alt="">
+                <img src="../img/study/stud_07.png" alt="">
+                <img src="../img/study/stud_02.png" alt="">
+                <img src="../img/study/stud_05.png" alt="">
+                <img src="../img/study/stud_09.png" alt="">
             </div>
            
         </div>
@@ -124,5 +131,17 @@
 
         <p class="help">需要帮助？ 点击预约专家讲解</p>
     </div>
+    <script src="../js/zepto.js"></script>
+    <script>
+        Zepto(function(){
+            $.ajax({
+                url:'../json/new.json',
+                type:'GET',
+                success:function(data){
+                    console.log(data)
+                }
+            })
+        })
+    </script>
 </body>
 </html>
